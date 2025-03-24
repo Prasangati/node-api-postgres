@@ -1,0 +1,11 @@
+# curl -X GET --location "http://localhost:3000/users"
+#    -H "Accept: application/json"
+
+PUT http://localhost:3000/users/1
+Accept: application/json
+
+
+  {
+    "name": "Prasanga",
+    "email": "prasanga@ok.com"
+  }
