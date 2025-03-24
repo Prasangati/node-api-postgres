@@ -10,8 +10,6 @@ const pool = new Pool({
 })
 
 
-const { body, validationResult } = require('express-validator');
-
 
 const getUsers = (request, response) => {
     pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
@@ -70,7 +68,6 @@ const createUser = (request, response) => {
         response.status(201).send(`User added with ID: ${results.rows[0].id}`)
     })
 }
-
 
 
 module.exports = {
